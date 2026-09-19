@@ -9,33 +9,3 @@ h1 {
    color: red;
 }
 
-/* Class selector for the intro paragraph, make the text a different colour and set the line height to 1.5 */
-
-.intro {
-  color: #006969;
-  line-height: 1.5;
-}
-
-/* Group into one rule using the comma selector to set the colour of the h2 and p elements to a different colour */
-
-h2, p {
-  color: #5f308d;
-}
-
-/* ID selector for the summit heading, make the text a different colour */
-
-#summit {
-   color: #44A8FF;
-}
-
-/* Set the line height of all p elements to 5.5 */
-
-p {
-   line-height: 5.5;
-}
-
-/* Overrule the line height of all p elements to 1.5 */
-
-p {
-   line-height: 1.5;
-}
