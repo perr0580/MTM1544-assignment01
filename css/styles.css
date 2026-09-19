@@ -18,3 +18,7 @@ h1 {
 
 /* Group into one rule using the comma selector, set the colour of the h2 and p elements to a different colour */
 
+h2, p {
+   color:rgb(94, 38, 146)
+}
+
