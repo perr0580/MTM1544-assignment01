@@ -9,10 +9,12 @@ h1 {
    color: red;
 }
 
-/*Class selector for the intro paragraph, make the text a different colour and set the font height to 1.5 */
+/*Class selector for the intro paragraph, make the text a different colour and set the line height to 1.5 */
 
 .intro {
    color: rgb(223, 13, 139);
    line-height: 1.5;
 }
+
+/* Group into one rule using the comma selector, set the colour of the h2 and p elements to a different colour */
 
