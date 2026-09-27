@@ -3,6 +3,8 @@
    Start by changing the body background colour and saving, to confirm the link works. */
 
 
+{ box-sizing: border-box; }
+
 /* Make the first heading red */
 
 h1 {
@@ -12,8 +14,19 @@ h1 {
 /*Class selector for the intro paragraph, make the text a different colour and set the line height to 1.5 */
 
 .intro {
-   color: rgb(223, 13, 139);
+   color: #ebd6dd;
    line-height: 1.5;
+}
+
+.intro {
+   background-color: #93739c;
+   border: 2px dashed #3b4475;
+   border-radius: 25px;
+   padding: 20px;
+   margin-bottom: 60px;
+   margin-left:auto;
+   margin-right:auto;
+   width: 902px;
 }
 
 /* Group into one rule using the comma selector, set the colour of the h2 and p elements to a different colour */
@@ -38,4 +51,19 @@ p {
 
 p {
    line-height: 1.5;
+}
+
+.a {
+   margin-bottom: 40px;
+}
+
+.b {
+   margin-top: 60px;
+}
+
+.frame {
+   aspect-ratio: 1/1;
+   width: 100px;
+   background-color: #93739c;
+   border: 2px solid #3b4475;
 }
