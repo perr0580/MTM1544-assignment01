@@ -123,11 +123,11 @@ h1, h2 {
 
 /* oklch looks much more natural and evenly spaced than hsl. */
 
-a {
+.link {
    background-color: #dac2ef;
 }
 
-a:hover {
+.link:hover {
    background-color: color-mix(in oklch, #dac2ef 50%, #93739c);
 }
 
@@ -137,3 +137,69 @@ a:hover {
 /* #000000 text with #a871da background passes */
 /* #ffffff text with #752fb6 background passes */
 /* #ffffff text with #411a65 background passes */
+
+/* week 4 assignment below */
+
+.link:hover {
+   background-color:#3b4475;
+   color:#ffffff;
+}
+.link:focus {
+   outline: 3px solid #dac2ef;
+   outline-offset: 2px;
+}
+
+.rows {
+   list-style-type: none;
+   padding: 0;
+   font-family: 'Lato', arial, sans-serif;
+}
+.rows li {
+   padding: 8px 12px;
+}
+.rows li:nth-child(odd) {
+   background-color: #dac2ef;
+}
+.rows li:first-child {
+  font-weight: 700;
+  border-bottom: 4px solid #5e2692;
+}
+
+.note {
+   font-family: 'Lato', arial, sans-serif;
+   color:#93739c;
+}
+
+.note::before {
+   content: "Note: ";
+   font-weight: 1000;
+   color: #5e2692;
+}
+/* This is safe to hide from assistive technologies because it's purely decorative */
+
+.class {
+   color:#93739c;
+}
+#id {
+   color:#5e2692;
+}
+h3 {
+   color:000000;
+}
+
+/* I think the ID will win since it has higher specificity */
+
+.single.classes {
+   color:#93739c;
+}
+.single.classes {
+   color:#5e2692;
+}
+.single.classes {
+   color:#000000;
+}
+/* This makes it easier to guess which style will apply as the last one to be read wins */
+
+:where() h2 {
+   color:#5e2692;
+}
